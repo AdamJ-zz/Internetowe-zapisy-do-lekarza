@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  data: 2010-12-06
+  imie: MyString
+  nazwisko: MyString
+  nrTel: 
+  godzina: 
+
+two:
+  data: 2010-12-06
+  imie: MyString
+  nazwisko: MyString
+  nrTel: 
+  godzina: 

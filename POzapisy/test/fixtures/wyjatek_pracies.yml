@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  jestLekarz: false
+  data: 2010-12-06
+  odGodz: 
+  doGodz: 
+
+two:
+  jestLekarz: false
+  data: 2010-12-06
+  odGodz: 
+  doGodz: 
