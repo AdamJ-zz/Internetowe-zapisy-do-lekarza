@@ -1,5 +1,11 @@
 POzapisy::Application.routes.draw do
-  get "lekarze/wyjatek"
+  root :to => 'lekarze', :action => 'wyjatek'
+  post '/lekarze/dodajwyjatek', :contoller=>'lekarze', :action=>'dodajwyjatek', :controller=>'lekarze'
+  #root :to => 'dodajwyjatek'
+  #resources :wyjatek_pracies, :path_names => { :create => 'dodajwyjatek'}
+  #resources :wyjatek_pracies, :controller => 'lekarze', :post => 'dodajwyjatek22'
+  get "lekarze/wyjatekpracy"
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

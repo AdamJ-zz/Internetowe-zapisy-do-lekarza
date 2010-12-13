@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+Lekarz.create(:imie => 'Jan', :nazwisko => 'Kowalski', :haslo =>'xyz', :login => 'jkowalski', :type => 'Lekarz')
+#Leakrz.create(:srCzas => 30, :specjalizacje => 'onkologia')
+PracRej.create(:imie => 'Anna', :nazwisko => 'Grodkowska', :haslo =>'xyz', :login => 'agrotkowska')

@@ -4,8 +4,8 @@ class CreateRejestracjas < ActiveRecord::Migration
       t.date :data
       t.string :imie
       t.string :nazwisko
-      t.int :nrTel
-      t.hour :godzina
+      t.integer :nrTel
+      t.time :godzina
 
       t.timestamps
     end

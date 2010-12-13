@@ -1,2 +1,35 @@
-<h1>Lekarze#wyjatek</h1>
-<p>Find me in app/views/lekarze/wyjatek.html.erb</p>
+<center><h2>Dodawanie wyjatku pracy</h2></center>
+<% form_tag({:contoller => "lekarze", :action => "dodajwyjatek"}) do %>
+<table>
+  <tr>
+    <td>
+      <%= label "", "Dodatkowy termin?:", :align => 'right'  %>
+      <%= select_tag(:typ, options_for_select(['TAK', 'NIE'])) %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= label "data", "Data:" %>
+      <%= date_select(:data,"") %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= label "odGodz", "Trwa od:" %>
+      <%= select_tag :odGodz, options_for_select(@godziny) %> : 
+      <%= select_tag :odMin, options_for_select(@minuty) %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= label "doGodz", "Trwa do:" %>
+      <%= select_tag :doGodz, options_for_select(@godziny) %> :
+      <%= select_tag :doMin, options_for_select(@minuty) %>
+    </td>
+  </tr>
+</table>
+  <div class="actions" align="right">
+    <%= submit_tag "Zatwierdz" %>
+  </div>
+
+<% end %>

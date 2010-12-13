@@ -1,4 +1,5 @@
 about=List versions of all Rails frameworks and the environment
+annotate_models=Add schema information (as comments) to model files
 db\:abort_if_pending_migrations=
 db\:charset=
 db\:collation=
@@ -44,6 +45,8 @@ doc\:clobber_plugins=
 doc\:clobber_rails=
 doc\:guides=
 doc\:plugins=
+doc\:plugins\:annotate_models=
+doc\:plugins\:dynamic_form=
 doc\:rails=
 doc\:reapp=
 doc\:rerails=

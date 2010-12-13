@@ -3,8 +3,8 @@ class CreateWyjatekPracies < ActiveRecord::Migration
     create_table :wyjatek_pracies do |t|
       t.boolean :jestLekarz
       t.date :data
-      t.hour :odGodz
-      t.hour :doGodz
+      t.time :odGodz
+      t.time :doGodz
 
       t.timestamps
     end

@@ -1,7 +1,7 @@
 class CreateLekarzs < ActiveRecord::Migration
   def self.up
     create_table :lekarzs do |t|
-      t.int :srCzas
+      t.integer :srCzas
       t.string :specjalizacje
 
       t.timestamps
